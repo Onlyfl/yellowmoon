@@ -1,0 +1,18 @@
+.wrapper{
+	.header{
+		text-align: center;
+		
+		.container {
+			
+			&_inner{
+				display: table-cell;
+				vertical-align: middle;
+				height: 100vh;
+				}
+			}
+		}
+	.header_nav {
+		height: 120px;
+		border-bottom: 1px solid $color-second;
+	}
+}

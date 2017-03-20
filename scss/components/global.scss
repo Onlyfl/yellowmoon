@@ -1,0 +1,42 @@
+$container-width: 1200px !default;
+$container-gutter: 0 10px !default;
+
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: table;
+	width: 100%;
+	text-align: center;
+	height: 100vh;
+	table-layout: fixed;
+}
+.header{
+		display: table-header-group;
+		background-color: $bg-header;
+		}
+.footer {
+	display: table-footer-group;
+}
+
+.container {
+	margin: auto;
+	max-width: $container-width;
+	padding: 0 $container-gutter;
+}

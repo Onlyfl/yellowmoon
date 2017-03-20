@@ -1,0 +1,78 @@
+@import "components/variables.scss";
+@import "components/mixins.scss";
+@import "components/type.scss";
+@import "components/forms.scss";
+@import "components/global.scss";
+@import "components/block.scss";
+
+.header_top_logo_wrapper {
+	margin-bottom: 50px;
+}
+.header_top_logo_text {
+	color: $body-bg;
+	margin-bottom: 50px;
+}
+.header_slogan {
+	color: $color-second;
+	font-size: 40px;
+	margin-bottom: 112px;
+}
+.header_main_button{
+	display: inline-block;
+	border: $bd-main;
+	padding: 20px 80px;
+	color: $body-bg;
+	margin-bottom: 90px;
+	position: relative;
+	&:hover {
+	color: $color-second;
+	text-decoration: underline;
+	border: $bd-main;
+	cursor: pointer;
+	
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: -70px;
+		left: 40%;
+		z-index: 2;
+		 width: 38px;
+    height: 20px;
+    background: transparent url("../img/arrow.png") no-repeat;
+	}
+}
+
+.header_nav {
+	padding-top: 35px;
+	&_block{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: right;
+		min-width:400px;
+		text-align: justify;
+	&:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+		li {
+			display: inline;
+			a {
+				display: inline-block;
+				padding: 15px 20px;
+				border: 1px solid #fff;
+			}
+			a:hover {
+				display: inline-block;
+				padding: 15px 20px;
+				border: $bd-main;
+				color: $body-color;
+			}
+		}
+	}
+}
+.second_logo {
+	float: left;
+}
