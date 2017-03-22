@@ -1,6 +1,10 @@
 $container-width: 1200px !default;
 $container-gutter: 0 10px !default;
-
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 html {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;

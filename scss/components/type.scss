@@ -29,7 +29,6 @@ $heading-font-size-5: 14px !default;
 $heading-margin-5: 1em !default;
 $heading-font-size-6: 12px !default;
 $heading-margin-6: 1em !default;
-$font-variant-base: small-caps;
 $font-variant-normal: normal;
 
 body {
@@ -38,7 +37,7 @@ body {
     font-size: $font-size-base;
     line-height: $line-height-base;
     font-family: $font-family-base;
-    font-variant: $font-variant-base;
+
 }
 
 p {

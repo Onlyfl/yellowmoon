@@ -2,17 +2,36 @@
 	.header{
 		text-align: center;
 		
-		.container {
-			
+		
+		}
+	.container {
+			max-width: 1200px;
 			&_inner{
 				display: table-cell;
 				vertical-align: middle;
 				height: 100vh;
+				margin: 0 auto;
+				max-width: 1200px;
+				
+				}
+			&_inner_fix{
+				max-width: 1200px;
+				display: table-cell;
+				vertical-align: middle;
+				height: auto;
+				margin: 0 auto;
 				}
 			}
-		}
 	.header_nav {
 		height: 120px;
 		border-bottom: 1px solid $color-second;
+	}
+	.about_block {
+		text-align: center;
+		display: table-row-group;
+		height: 300px;
+		h2 {
+			margin-top: 0;
+		}
 	}
 }

@@ -1,4 +1,5 @@
-@import "components/variables.scss";
+
+@import "components/icon.scss";
 @import "components/mixins.scss";
 @import "components/type.scss";
 @import "components/forms.scss";
@@ -11,6 +12,7 @@
 .header_top_logo_text {
 	color: $body-bg;
 	margin-bottom: 50px;
+	text-transform: uppercase;
 }
 .header_slogan {
 	color: $color-second;
@@ -22,12 +24,13 @@
 	border: $bd-main;
 	padding: 20px 80px;
 	color: $body-bg;
-	margin-bottom: 90px;
+	margin-bottom: 70px;
+	text-transform: uppercase;
 	position: relative;
 	&:hover {
 	color: $color-second;
 	text-decoration: underline;
-	border: $bd-main;
+	border: 1px solid $body-bg;
 	cursor: pointer;
 	
 	}
@@ -61,8 +64,9 @@
 			display: inline;
 			a {
 				display: inline-block;
+				text-transform: uppercase;
 				padding: 15px 20px;
-				border: 1px solid #fff;
+				border: 1px solid rgba(0,0,0,0);
 			}
 			a:hover {
 				display: inline-block;
@@ -75,4 +79,301 @@
 }
 .second_logo {
 	float: left;
+}
+.about_block {
+	h2{
+		font-size: 25px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	.about_description {
+	color: $color-second;
+}
+}
+.features_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		width: 33.33%;
+		display: inline-block;
+		float: left;
+		padding: 0 3%;
+	}
+	p{
+		padding: 0 20% 0 0;
+		color: $color-third;
+		height: 105px;
+		overflow: hidden;
+
+	}
+	.features_head {
+			margin-bottom: 25px;
+		height: 50px;
+			overflow: hidden;
+	 h4{
+	 	margin: 0;
+	 	padding-left: 10px;
+	 	display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+			border-left: $bd-main;
+			font-weight: 400;
+	 }
+	 .count {
+	 	display: table-cell;
+	 	font-size: 25px;
+	 	color: $color-second;
+	 	height: 35px;
+	 	padding-right: 15px;
+	 	vertical-align: baseline;
+	 }
+}
+}
+.text_block {
+	height: 600px;
+	background-color: $color-second;
+	display: table-row-group;
+	text-align: center;
+	.text_block_inner{
+		
+			width: 50%;
+			display: inline-block;
+		h1 {
+			font-size: 25px;
+			font-weight: 300;
+			font-style: italic;
+
+		}
+		p{
+			color: #fff;
+		}
+	}
+}
+.portfolio_header, .clients_header {
+	height: 300px;
+	display: table-row-group;
+	text-align: center;
+	.portfolio_header_block, .clients_header_block {
+		width: 60%;
+		display: inline-block;
+		h3{
+			font-weight: 400;
+			margin: 0 0 30px 0;
+		}
+		p{
+			color: $color-second;
+		}
+	}
+}
+ .clients_header {
+	background-color: #424245;
+	 .clients_header_block {
+	
+		h3{
+			color: #fff;
+		}
+	
+	}
+}
+.portfolio_block {
+	text-align: center;
+	padding-bottom: 150px;
+
+		.portfolio_block_open{
+			margin: 0;
+			color: $color-second;
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+		&:before {
+		content: "";
+		position: absolute;
+		bottom: -70px;
+		left: 40%;
+		z-index: 2;
+		 width: 38px;
+    height: 20px;
+    background: transparent url("../img/arrow2.png") no-repeat;
+	}
+		}
+		.portfolio_block_open.opened{
+			&:before {
+					-webkit-animation: cssAnimation 1s 16 ease;
+					-moz-animation: cssAnimation 1s 16 ease;
+					-o-animation: cssAnimation 1s 16 ease;
+					animation-iteration-count: 1;
+					 background: transparent url("../img/arrow2.png") no-repeat;
+					 -webkit-transform: rotate(30deg);
+				  -moz-transform: rotate(180deg);
+				  -ms-transform: rotate(180deg);
+				  -o-transform: rotate(180deg);
+				  transform: rotate(180deg);
+					}
+					@-webkit-keyframes cssAnimation {
+					from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+					to { -webkit-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+					}
+					@-moz-keyframes cssAnimation {
+					from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+					to { -moz-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+					}
+					@-o-keyframes cssAnimation {
+					from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+					to { -o-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+					}
+			}
+		
+		.portfolio_block_add{
+			display: none;
+		}
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		font-size: 0;
+	
+		li {
+			display: inline-block;
+			width: 22%;
+			font-size: 15px;
+			margin-right: 3%;
+			margin-bottom: 25px;
+			position: relative;
+			overflow: hidden;
+		}
+		li:hover > .gallery-photo-overlay {
+		 top: 0;
+			 
+			
+		}
+		li:nth-child(4n) {
+		margin-right: 0;
+		}
+		.gallery-photo-overlay {
+		background-color: $color-second;
+		padding-top: 60px;
+    height: 100%;
+    left: 0;
+  	top: -100%;
+    position: absolute;
+    width: 100%;
+   	 -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+      -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+      -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+      -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+      transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+		h5 {
+			margin: 0 0 15px 0;
+		}
+		p{
+			color: #fff;
+
+		}
+		}
+
+	}
+}
+.clients {
+		background-color: #424245;
+		.clients_block {
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0 0 60px;
+				text-align: justify;
+				&:after{
+					content: "";
+					display: inline-block;
+					width: 100%;
+				}
+			}
+			li {
+				display: inline-block;
+				
+			a {
+					height: 65px;
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
+}
+.form_block {
+
+	form {
+		width: 80.83%;
+		margin: 0 auto;
+		padding-bottom: 85px;
+	}
+	.form-group {
+		width: 100%;
+		font-size: 0px;
+		input, textarea {
+			font-size: 15px;
+			width: 100%;
+			height: 50px;
+			border: none;
+			color: #fff;
+			padding: 10px 0 10px 20px;
+			background-color: $color-second;
+		}
+		textarea {
+			height: 180px;
+		}
+		input[type="submit"]{
+			background-color: #000;
+			color: $color-second;
+		}
+		input[type="submit"]:hover{
+			
+			color: #fff;
+		}
+	}
+	.form-group-col-2 {
+	
+		input {
+			width: 48.45%;
+			display: inline-block;
+		}
+		input:first-child {
+			margin-right: 3%;
+		}
+	}
+}
+.footer {
+	background-color: #131316;
+	height: 100px;
+	.block-footer {
+		padding-top: 40px;
+	}
+	.copyright {
+		color: $color-second;
+		display: inline-block;
+		width: 25%;
+		float: left;
+	}
+	.social {
+		display: inline-block;
+		width: 35%;
+		float: right;
+	 a{
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		color: #fff;
+		font-size: 20px;
+		padding: 0 34px 0;
+		&:hover {
+			color: $color-second;
+		}
+	}
+	}
+}
+.stickytop {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 100;
 }
