@@ -133,7 +133,7 @@
 .text_block {
 	height: 600px;
 	background-color: $color-second;
-	display: table-row-group;
+	display: table-row;
 	text-align: center;
 	.text_block_inner{
 		
@@ -152,7 +152,7 @@
 }
 .portfolio_header, .clients_header {
 	height: 300px;
-	display: table-row-group;
+	display: table-row;
 	text-align: center;
 	.portfolio_header_block, .clients_header_block {
 		width: 60%;

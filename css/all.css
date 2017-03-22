@@ -191,7 +191,7 @@ img {
 
 .wrapper .about_block {
   text-align: center;
-  display: table-row-group;
+  display: table-row;
   height: 300px; }
   .wrapper .about_block h2 {
     margin-top: 0; }
@@ -306,7 +306,7 @@ img {
 .text_block {
   height: 600px;
   background-color: #ffe600;
-  display: table-row-group;
+  display: table-row;
   text-align: center; }
   .text_block .text_block_inner {
     width: 50%;
@@ -320,7 +320,7 @@ img {
 
 .portfolio_header, .clients_header {
   height: 300px;
-  display: table-row-group;
+  display: table-row;
   text-align: center; }
   .portfolio_header .portfolio_header_block, .portfolio_header .clients_header_block, .clients_header .portfolio_header_block, .clients_header .clients_header_block {
     width: 60%;
